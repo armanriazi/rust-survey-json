@@ -1,0 +1,30 @@
+[package]
+name = "rust-survey-json_bin"
+version = "0.1.0"
+authors = ["Arman <armanriyazi.github.io@gmail.com>"]
+description = "A finder on json data for calculate the rate of users"
+edition = "2021"
+readme = "Readme-Survey.md"
+license = "MPL-2.0"
+homepage = "https://armanriazi.github.io/site/public/programming/rust/rust"
+repository = "https://github.com/armanriazi/rust-survey"
+keywords = ["api","rest","survey","json", "filter"]
+categories = ["development-tools", "accessibility", "json","parsing"]
+
+[dependencies]
+rust-survey-json_lib = { path = "../rust-survey-json_lib"}
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+log = "0.4.0"
+env_logger = "0.9.0"
+
+[dev-dependencies]
+proptest = "1"
+pretty_assertions = "1"
+env_logger = "0.9.0"
+
+[[bin]]
+doc = true
+name = "rust-survey_main_bin"
+path = "src/rust-survey_main_bin.rs"
+test = true
