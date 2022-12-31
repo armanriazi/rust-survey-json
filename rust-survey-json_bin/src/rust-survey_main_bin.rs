@@ -15,7 +15,7 @@ use std::{env::args, fs::File};
 ///
 /// ```cd rust-survey-json_bin```
 /// 
-/// ```RUST_LOG=INFO cargo run  -p rust-survey-json_bin --bin rust-survey_main_bin 1 file /mnt/home/rust-all-in-one-projects/workspace/projects/survey/rust-survey/data/1.json /mnt/home/rust-all-in-one-projects/workspace/projects/survey/rust-survey/data/2.json```
+/// ```RUST_LOG=INFO cargo run  -p rust-survey-json_bin --bin rust-survey_main_bin 1 file /mnt/home/rust-survey/data/1.json /mnt/home/rust-survey/data/2.json```
 ///
 /// ```cargo doc  --package rust-survey-json_bin --message-format short --no-deps --open --color always```
 ///
