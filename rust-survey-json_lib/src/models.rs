@@ -20,6 +20,20 @@ pub enum Message {
     IsCompleted(bool),
 }
 
+#[test]
+fn is_completed_test(){  
+    let mut state = State {
+        completed: false,
+        survey: Survey::new(String::default(), String::default(), 0, 0.0, 0),
+        datetime: chrono::offset::Utc::now().to_string(),
+        description: String::default(),
+        result: 0.0,
+        user_id: 1u32,
+    }; 
+    assert_eq!(state.completed(),state.incomplete());    
+}
+
+
 #[derive(Debug, PartialEq, PartialOrd)]
 pub struct State {
     pub survey: Survey,

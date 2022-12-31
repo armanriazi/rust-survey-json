@@ -1,12 +1,12 @@
 use pretty_assertions::assert_eq;
 use proptest::prelude::*;
 use rust_survey_json_lib::models::{State, Survey, Message};
-use chrono;
-use log::{debug, info};
 extern crate serde_json;
 use serde_json::Value;
 
 mod common;
+
+
 /// process test
 ///
 /// ## Commands
@@ -16,7 +16,7 @@ mod common;
 ///
 /// ```cargo test  -p rust-survey-json_lib -- --show-output --ignore```
 ///             
-/// ```cargo doc  --package rust-survey-json_bin --message-format short --no-deps --open --color always```
+/// ```cargo doc  --package rust-survey-json_lib --message-format short --no-deps --open --color always```
 ///
 /// ```cargo test --doc  --package rust-survey-json_lib```
 ///
@@ -35,7 +35,7 @@ mod common;
 /// `passed`
 /// 
 
-#[cfg(test)]
+
 
 #[test]
 fn process(){        
